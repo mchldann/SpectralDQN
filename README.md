@@ -21,7 +21,15 @@ conda env create --file environment.yml
 ## Running
 
 ```console
-cd agent
 source activate spectral_dqn
+cd agent
 python2 ./python_agent.py game_title
 ```
+
+The agent's configuration settings are stored in /agent/python_agent.py.
+
+To see the agent playing the game, set USE_SDL = False then select the SDL window that appears and press 'd' to toggle the display.
+
+To see performance and debugging graphs, set agent_params\["show_graphs"\] = True.
+
+If you don't have a CUDA enabled GPU, you can set agent_params\["gpu"\] = -1 to train on the CPU.
