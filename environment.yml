@@ -1,0 +1,11 @@
+name: spectral_dqn
+channels:
+  - defaults
+dependencies:
+  - python=2.7
+  - anaconda
+  - libgcc
+  - pytorch
+  - torchvision
+  - cudatoolkit=10.0
+  - opencv
