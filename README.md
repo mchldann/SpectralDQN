@@ -8,12 +8,15 @@ We consider reinforcement learning tasks with *progressive rewards*; that is, ta
 
 ## Requirements
 
-Blah...
+The installation instructions below assume that you have Anaconda installed.
 
 ## Installing
 First install the Arcade Learning Environment (ALE) by following the instructions in README_ALE.md
 
+Next, create a Conda environment with the required packages by running:
+```console
 conda env create --file environment.yml
+```
 
 ## Running the main Atari experiments (game = ms_pacman)
 
