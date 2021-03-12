@@ -8,24 +8,20 @@ We consider reinforcement learning tasks with *progressive rewards*; that is, ta
 
 ## Requirements
 
-The installation instructions below assume that you have Anaconda installed.
+The installation instructions below assume that you have Anaconda installed. You will also need to source some Atari ROMs and place them in the /roms folder.
 
 ## Installing
-First install the Arcade Learning Environment (ALE) by following the instructions in README_ALE.md
+First, install the Arcade Learning Environment (ALE) by following the instructions in README_ALE.md
 
-Next, create a Conda environment with the required packages by running:
+Next, create a Conda environment with the necessary packages installed by running:
 ```console
 conda env create --file environment.yml
 ```
 
-## Running the main Atari experiments (game = ms_pacman)
+## Running
 
-## Settings
-
-Change to CPU if necessary in python_agent.py
-
-## Actually running
+```console
 cd agent
 source activate spectral_dqn
-python2 ./python_agent.py ms_pacman
-
+python2 ./python_agent.py game_title
+```
